@@ -180,6 +180,58 @@ main {
    
 }
 
+/* This is the job experience section */
+
+
+.experience-container {
+
+    margin: 20px 10px;
+    min-height: 700px;
+}
+
+
+#experience figure {
+  
+    background-color: var(--color4);
+}
+
+/* I want this to be displayed large and centered by itself */
+.experience-figure-1 {
+    width: 50%;
+    margin: 10px auto;
+    align-self: center;
+    display: block;
+}
+
+/* Underneath the first website figure I want these 3 to line up spaced apart */
+.experience-figures-small {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-figures-side figure {
+    max-height: 1000px;
+}
+
+#experience figure div {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    
+    margin: 10px;
+}
+
+#experience figure figcaption {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.experience-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 /* This is the footer/contact section */
 footer {
