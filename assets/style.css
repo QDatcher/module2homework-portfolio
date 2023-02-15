@@ -90,6 +90,8 @@ main {
     justify-content: space-between;
 }
 
+/* This aspect of the about section should be on the left side contained in a bubble */
+
 .about-content {
     width: 50%;
     margin: 0 30px;
@@ -142,6 +144,42 @@ main {
     background-image: url('./images/stars.png');
     
 }
+
+/* This part of the about section should be on the right side and will be contained in a bubble */
+
+.hobbies-container {
+    background-image: url('./images/ryan-hutton-Jztmx9yqjBw-unsplash.jpg');
+    background-position: center;
+}
+
+.hobbies-description {
+   position: relative;
+   bottom: 50px;
+   margin: 0px 20px;
+}
+
+.hobbies-description h3{
+   text-align: center;
+}
+
+.hobbies-container {
+   padding: 15px 0;
+   display: grid;
+   width: 45%;
+   display: block;
+   justify-content: center;
+   background-color: var(--color4);
+   border-radius: 10%;
+   align-content: space-between;
+}
+
+.hobbies-container figure {
+   max-width: 100%;
+   display: grid;
+   justify-content: center;
+   
+}
+
 
 /* This is the footer/contact section */
 footer {
