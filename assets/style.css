@@ -239,3 +239,27 @@ footer {
     position: relative;
     top: 150px;
 }
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+#contact div {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: var(--color4);
+    display: grid;
+}
+
+#contact div h3 {
+    text-align: center;
+}
+
+#contact div p {
+    text-align: center;
+}
+
+
