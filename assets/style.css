@@ -16,7 +16,13 @@
     --color5: rgba(151, 200, 235, 1);
     }
     
-
+h2 {
+    font-family: Orbitron;
+    font-size: 32px;
+    text-align: center;
+    margin: 35px 0px;
+    color: var(--color3)
+}
 
 /* The header will be fixed to to top to improve navigation */
 
@@ -66,4 +72,80 @@ nav ul a:hover {
     max-width:100%;
     max-height:100%;
     
+}
+
+/* Getting into the body's main section */
+
+main {
+    position: relative;
+    top: 150px;
+}
+
+
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-content {
+    width: 50%;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 1100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: var(--color5);
+    background-color: var(--color4);
+    border-radius: 10%;
+    border: 3px solid var(--color3) ;
+    line-height: 1.5;
+}
+
+.about-content p, .about-content ul {
+    margin: 2% 7%;
+    font-family: 'Josefin Sans';
+    color:whitesmoke;
+}
+
+.main-photo {
+    max-width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.main-photo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.inline {
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 15px;
+}
+
+.inline br {
+    line-height: 300px;
+}
+
+.block {
+    display: block;
+    margin-top: 10px 15px;
+}
+
+.about-content{
+    background-image: url('./images/stars.png');
+    
+}
+
+/* This is the footer/contact section */
+footer {
+    margin: 20px 0px;
+    position: relative;
+    top: 150px;
 }
