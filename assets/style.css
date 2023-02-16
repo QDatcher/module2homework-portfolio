@@ -256,7 +256,7 @@ main {
 
 
 .experience-container {
-
+    
     margin: 20px 10px;
     min-height: 700px;
 }
@@ -269,21 +269,25 @@ main {
 
 /* I want this to be displayed large and centered by itself */
 .experience-figure-1 {
-    width: 50%;
+    width: 60%;
     margin: 10px auto;
     align-self: center;
     display: block;
+    min-width: 500px;
 }
 
 /* Underneath the first website figure I want these 3 to line up spaced apart */
 .experience-figures-small {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .experience-figures-small figure {
-
+    max-width: 500px;
     max-height: 1000px;
+    margin: 30px auto;
 }
 
 #experience figure div {
@@ -298,12 +302,15 @@ main {
     display: block;
     text-align: center;
     margin: 10px 0;
+    font-family: 'Josefin Sans';
 }
 
 .experience-photo {
     max-width: 100%;
     max-height: 100%;
 }
+
+
 
 
 /* This is the footer/contact section */
@@ -316,7 +323,7 @@ footer {
 #contact {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px auto;
 }
 
 #contact div {
@@ -325,6 +332,7 @@ footer {
     text-align: center;
     background-color: var(--color4);
     display: grid;
+    flex-shrink: 1;
 }
 
 #contact div h3 {
