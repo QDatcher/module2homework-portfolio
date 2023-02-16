@@ -155,9 +155,8 @@ main {
 /* This part of the about section should be on the right side and will be contained in a bubble */
 
 .hobbies-container {
-   padding: 15px 0;
    display: grid;
-   grid-row: 2;
+   grid-template-rows: 1fr 1fr;
    width: 45%;
    display: block;
    justify-content: center;
@@ -209,7 +208,49 @@ main {
 }
 
 /* This is the experience when screen size is  */
+@media screen and (max-width: 700px){
 
+    .about-content{
+        display: block;
+    }
+
+    .main-photo {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .inline {
+        text-align: center;
+        max-width: 80%;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 1327px) {
+    
+    .about-container, .hobbies-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .first-hobby {
+        height: 200;
+    }
+
+    .first-hobby iframe {
+        margin: 0 auto;
+        width: 45%;
+        
+    }
+
+    .second-hobby video {
+        margin: 0 auto;
+        width: 40%;
+      
+    }
+}
 
 /* This is the job experience section */
 
