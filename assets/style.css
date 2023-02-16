@@ -98,7 +98,7 @@ main {
     margin: 0 30px;
     display: flex;
     align-items: center;
-    height: 1100px;
+    min-height: 700px;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
@@ -107,18 +107,22 @@ main {
     border-radius: 10%;
     border: 3px solid var(--color3) ;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 .about-content p, .about-content ul {
     margin: 2% 7%;
     font-family: 'Josefin Sans';
     color:whitesmoke;
+    flex-shrink: 1;
 }
 
 .main-photo {
     max-width: 40%;
     display: inline-block;
-    margin-left: 5%;
+    margin: 20px 0px 20px 5%;
+    border-radius: 20%;
+    overflow: hidden;
 }
 
 .main-photo img {
@@ -146,40 +150,66 @@ main {
     
 }
 
+/* After resizing */
+
 /* This part of the about section should be on the right side and will be contained in a bubble */
 
 .hobbies-container {
-    background-image: url('./images/ryan-hutton-Jztmx9yqjBw-unsplash.jpg');
-    background-position: center;
+   padding: 15px 0;
+   display: grid;
+   grid-row: 2;
+   width: 45%;
+   display: block;
+   justify-content: center;
+   background-image: url('./images/ryan-hutton-Jztmx9yqjBw-unsplash.jpg');
+   background-position: center;
+   flex-grow: 1;
+   border-radius: 10%;
+   border: 1px solid var(--color3) ;
+   align-content: space-around;
+   margin: auto 0px;
 }
 
-.hobbies-description {
-   position: relative;
-   bottom: 50px;
-   margin: 0px 20px;
-}
 
 .hobbies-description h3{
    text-align: center;
 }
 
-.hobbies-container {
-   padding: 15px 0;
-   display: grid;
-   width: 45%;
-   display: block;
-   justify-content: center;
-   background-color: var(--color4);
-   border-radius: 10%;
-   align-content: space-between;
-}
+
 
 .hobbies-container figure {
    max-width: 100%;
    display: grid;
    justify-content: center;
+   margin: 20px auto;
    
 }
+
+.hobbies-container figure figcaption {
+    margin: 10px 20px;
+    color: whitesmoke;
+    font-family: 'Josefin Sans';
+    text-align: center;
+}
+
+
+.first-hobby{
+    
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.second-hobby {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.first-hobby iframe, .second-hobby video {
+    margin: 10px auto;
+}
+
+/* This is the experience when screen size is  */
+
 
 /* This is the job experience section */
 
