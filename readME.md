@@ -21,7 +21,7 @@ N/A
 
 ## Usage
 
-![Top of website and about section](assets/images/website-1.png)
+![Top of website and about section](assets/images/website-top.png)
 -At the top is the header that is fixed. The left side has a logo while the right side has a navigation bar for easy navigation throughout the website.
 -Below is the about me section that on then left side has a pic and description of the site creator. The right side showcases 2 videos of the site creators hobbies.
 
