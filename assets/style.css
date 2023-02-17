@@ -4,6 +4,9 @@
     font-size: 16px;
 }
 
+html {
+    min-width: 400px;
+}
 
 :root {
     --backgroundColor1: black;
@@ -59,7 +62,7 @@ nav ul a {
     font-family: Righteous;
 }
 
-nav ul a:hover {
+a:hover {
     color: var(--styleColor2)
 }
 
@@ -150,7 +153,7 @@ main {
     
 }
 
-/* After resizing */
+
 
 /* This part of the about section should be on the right side and will be contained in a bubble */
 
@@ -198,59 +201,22 @@ main {
     grid-row-end: 2;
 }
 
+.first-hobby iframe {
+    margin: 0px auto;
+    width: 50%;
+    min-height: 250px;
+}
+
 .second-hobby {
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
-.first-hobby iframe, .second-hobby video {
-    margin: 10px auto;
+.second-hobby video {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
 }
 
-/* This is the experience when screen size is  */
-@media screen and (max-width: 700px){
-
-    .about-content{
-        display: block;
-    }
-
-    .main-photo {
-        display: block;
-        width: 100%;
-        margin: 15px auto;
-    }
-
-    .inline {
-        text-align: center;
-        max-width: 80%;
-        display: block;
-        margin: 15px auto;
-    }
-}
-
-@media screen and (max-width: 1327px) {
-    
-    .about-container, .hobbies-container {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .first-hobby {
-        height: 200;
-    }
-
-    .first-hobby iframe {
-        margin: 0 auto;
-        width: 45%;
-        
-    }
-
-    .second-hobby video {
-        margin: 0 auto;
-        width: 40%;
-      
-    }
-}
 
 /* This is the job experience section */
 
@@ -348,3 +314,34 @@ footer {
 }
 
 
+
+/* Resizing for responsiveness*/
+@media screen and (max-width: 700px){
+
+    .about-content{
+        display: block;
+    }
+
+    .main-photo {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .inline {
+        text-align: center;
+        max-width: 80%;
+        display: block;
+        margin: 15px auto;
+    }
+
+}
+
+@media screen and (max-width: 1327px) {
+    
+    .about-container, .hobbies-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
