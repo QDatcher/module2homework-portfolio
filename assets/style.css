@@ -276,7 +276,10 @@ main {
     max-height: 100%;
 }
 
-
+.experience-photo:hover {
+    background-color: var(--color4);
+    opacity: .5;
+}
 
 
 /* This is the footer/contact section */
