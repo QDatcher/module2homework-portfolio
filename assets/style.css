@@ -269,6 +269,7 @@ main {
     text-align: center;
     margin: 10px 0;
     font-family: 'Josefin Sans';
+    line-height: 1.5;
 }
 
 .experience-photo {
@@ -281,6 +282,10 @@ main {
     opacity: .5;
 }
 
+.experience-titles {
+    font-size: 25px;
+    color: var(--color3);
+}
 
 /* This is the footer/contact section */
 footer {
