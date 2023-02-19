@@ -242,7 +242,7 @@ main {
     min-width: 500px;
 }
 
-/* Underneath the first website figure I want these 3 to line up spaced apart */
+/* Underneath the first website figure I want these 3 to float around seperately like a diamond form a line when resized*/
 .experience-figures-small {
     display: flex;
     flex-wrap: wrap;
@@ -307,6 +307,9 @@ footer {
     background-color: var(--color4);
     display: grid;
     flex-shrink: 1;
+    border-radius: 30%;
+    margin: 0px 10px;
+    padding: 10px;
 }
 
 #contact div h3 {
